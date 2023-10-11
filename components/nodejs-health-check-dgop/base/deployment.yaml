@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: nodejs-health-check-dgop
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-jbva-tenant/e2e-nodejs/nodejs-health-check-dgop@sha256:3bf61b6615e23de9106db928cc9d50f764627aa663e1406e2b41932dbe8bdc61
         name: my-nodejs
         ports:
         - containerPort: 3001
