@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check-dgop
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-jbva-tenant/e2e-nodejs/nodejs-health-check-dgop@sha256:3bf61b6615e23de9106db928cc9d50f764627aa663e1406e2b41932dbe8bdc61
+        name: my-nodejs
+        resources: {}
+status: {}
